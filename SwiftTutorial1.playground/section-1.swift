@@ -1,2 +1,3 @@
 let tutorialTeam = 56
-let tutorialTeam 
+let editorialTeam = 36
+
