@@ -32,3 +32,4 @@ if let removedValue = airports.removeValueForKey("DUB"){
 }else {
     println("The airports dictionary does mot contain a value fur DUB.")
 }
+airports
