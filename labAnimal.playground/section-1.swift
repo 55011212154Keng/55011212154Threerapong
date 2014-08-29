@@ -3,6 +3,7 @@ class zooAnimal{
     let food:String
    
     var docAnimal :Dictionary<String,String>=["Elephant":"Water","Lion":"Meat","Panda":"Bamboo","Leopard":"Banana"]
+    
     init(animal:String,food:String){
         self.animal = animal
         self.food   = food
@@ -26,7 +27,8 @@ class zooAnimal{
         docAnimal["Lion"]=nil
         return docAnimal
     }
+    
 }
 let testAnimal = zooAnimal(animal:"Name",food:"food")
-testAnimal.addAnimal()
+    testAnimal.removeAnimal()
 
