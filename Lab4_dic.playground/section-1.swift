@@ -1,4 +1,4 @@
-[key 1: value 1 , key 2: value 2, key 3 : value 3]
+//[key 1: value 1 , key 2: value 2, key 3 : value 3]
 var airports: [String : String] = ["TY0" : "Tokyo","DUB": "Dublin"]
 
 if airports.isEmpty {

@@ -32,9 +32,15 @@ numid.append(55011212158)
 numid
 
 if(true){
-    println("\(name)newline")
+ //   println("\(name)newline")
 }
 
+
+
+
+let dictionary:Dictionary<String,Int> = ["dog":1,"kat":2,"dog":3]
+
+var airport :[String:String] =["TYO":"Tokyo","DUB":"Dublin","BKK":"Bankkok"]
 
 
 
