@@ -13,6 +13,30 @@ class ViewController: UIViewController,UITableViewDataSource {
    
     var items = [NSManagedObject]()
     
+    @IBAction func deleteitem(sender: AnyObject) {
+        var alert = UIAlertController(title: "Delete item", message: "delete a old item", preferredStyle: .Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .Default)
+            { (action: UIAlertAction!) -> Void in
+                let textField = alert.textFields![0] as UITextField
+                self.deleteName(textField.text)
+                self.tableView.reloadData()
+        }
+        let cancel1Action = UIAlertAction(title: "Cancle", style: .Default) {
+            (action: UIAlertAction!) -> Void in
+        }
+        alert.addTextFieldWithConfigurationHandler {
+            (textField: UITextField!) -> Void in
+        }
+        alert.addAction(okAction)
+        alert.addAction(cancel1Action)
+        
+        presentViewController(alert,
+            animated: true,
+            completion: nil)
+        
+    }
+    
     @IBAction func additem(sender: AnyObject) {
         var alert = UIAlertController(title: "New item", message: "Add a new item", preferredStyle: .Alert)
         
@@ -90,8 +114,19 @@ class ViewController: UIViewController,UITableViewDataSource {
         
         
     }
+    func deleteName(name:String){
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext: managedContext)
+        let item   = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        item.setValue(name, forKey: "name")
+        var error: NSError?
+        
+        
+        items.append(item)
     
 
 
+}
 }
 

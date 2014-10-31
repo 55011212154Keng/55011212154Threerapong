@@ -41,6 +41,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="3K8-gl-TCh">
+                        <barButtonItem key="leftBarButtonItem" title="Delete" id="8La-Hf-H03">
+                            <connections>
+                                <action selector="deleteitem:" destination="vXZ-lx-hvc" id="oT5-sd-Tji"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="yBQ-bi-mzl">
                             <connections>
                                 <action selector="additem:" destination="vXZ-lx-hvc" id="c4M-14-axF"/>
@@ -54,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="69.75"/>
+            <point key="canvasLocation" x="719" y="-71"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oKR-cx-N6t">
@@ -72,7 +77,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kL3-w3-oFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334.5" y="185.25"/>
+            <point key="canvasLocation" x="151" y="-9"/>
         </scene>
     </scenes>
 </document>
