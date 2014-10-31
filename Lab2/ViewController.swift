@@ -17,7 +17,7 @@ class ViewController: UIViewController,ColorTwoViewControllerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     func myVCDidFinish(controller: ColorTwoViewController, text: String) {
-        colorLabel.text = "Co: " + text
+       // colorLabel.text = "Co: " + text
         if(text=="Red")
         {colorLabel.backgroundColor = UIColor.redColor()}
         else if(text=="Blue")
