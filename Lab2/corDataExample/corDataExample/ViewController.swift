@@ -120,6 +120,8 @@ class ViewController: UIViewController,UITableViewDataSource {
         let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext: managedContext)
         let item   = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
         item.setValue(name, forKey: "name")
+        
+        
         var error: NSError?
         
         
